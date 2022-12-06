@@ -2,17 +2,21 @@ Console.WriteLine("Введите число:");
 
 int number = int.Parse(Console.ReadLine()!);
 
-if (number <= 0 || number > 7)
+if (number < 0)
 {
-    Console.WriteLine("неверный ввод");
+    number = number * -1;
 }
-
-else if (number > 5 && number < 8)
-
+if (number < 100 && number > -100)
 {
-    Console.WriteLine("да");
+    Console.WriteLine("третьего числа нет");
 }
 else
 {
-    Console.WriteLine("нет");
+    while (number > 999)
+
+    number = number / 10;
+    int chislo3 = number % 10;
+
+
+    Console.WriteLine(chislo3);
 }
