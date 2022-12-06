@@ -2,15 +2,15 @@ Console.WriteLine("Введите трехзначное число:");
 
 
 int number = int.Parse(Console.ReadLine()!);
-if(number < 1000)
+if (number < 1000)
 {
-int result = number / 10;
-int SecondDigit = result % 10;
+    int result = number / 10;
+    int SecondDigit = result % 10;
 
-Console.WriteLine(SecondDigit);
+    Console.WriteLine(SecondDigit);
 }
 
-else 
+else
 {
     Console.WriteLine("Неверный ввод");
 
