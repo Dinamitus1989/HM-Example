@@ -1,16 +1,12 @@
 Console.WriteLine("Введите число:");
 
 int number = int.Parse(Console.ReadLine()!);
-if(number < 1000)
-{
-int result = number / 10;
-int SecondDigit = result % 10;
+index = n;
 
-Console.WriteLine(SecondDigit);
-}
+int number = Array[n];
 
-else 
-{
-    Console.WriteLine("Неверный ввод");
+Console.WriteLine(n);
 
-}
+
+
+
