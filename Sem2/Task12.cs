@@ -1,12 +1,18 @@
 Console.WriteLine("Введите число:");
 
 int number = int.Parse(Console.ReadLine()!);
-index = n;
 
-int number = Array[n];
+if (number <= 0 || number > 7)
+{
+    Console.WriteLine("неверный ввод");
+}
 
-Console.WriteLine(n);
+else if (number > 5 && number < 8)
 
-
-
-
+{
+    Console.WriteLine("да");
+}
+else
+{
+    Console.WriteLine("нет");
+}
