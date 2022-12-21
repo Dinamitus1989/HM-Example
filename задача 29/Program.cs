@@ -7,27 +7,22 @@ int number2 = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите max");
 int number3 = int.Parse(Console.ReadLine()!);
 
+int[] array = GenArray(number1, number2, number3);
 
-int[] Array = GenArray(number1, number2, number3);
-PrintArray(Array);
 
-int[] GenArray(int n, int min, int max)
+for (int i = 0; i < array.Length; i++)
 {
-    int[] array = new int[n];
- 
-    for (int i = 0; i < array.Length; i++)
-    {
-        array[i] = new Random().Next(min,max+1);
-    }
- 
-    return array;
+    Console.Write(array[i] + " ");
 }
- 
-void PrintArray(int[] array)
+
+int[] GenArray(int a, int b, int c)
 {
+    int[] array = new int[a];
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write(array[i] + " ");
+        array[i] = new Random().Next(b, c + 1);
     }
-    Console.WriteLine();
+
+return array;
+
 }
